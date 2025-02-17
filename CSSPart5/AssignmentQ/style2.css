@@ -1,0 +1,19 @@
+#container {
+  height: 50px;
+  width: 900px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  background-color: #c67590;
+  display: flex;
+  
+}
+
+.child {
+  height: 50px;
+  width: 80px;
+  font-size: 24px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}

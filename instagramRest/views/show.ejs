@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in detail</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Here is your post in detail</h2>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <p>Post id: <%= post.id %></p>
+    <br>
+    <div class="post">
+        <h3 class="user"><%= post.username %></h3>
+        <br>   
+        <% if(post.imgSrc) { %>
+            <img src="<%= post.imgSrc %>" alt="Post image" width="300">
+        <% } %>
+        <br>
+        <br>
+        <p class="caption"><%= post.caption %></p>
+    </div>
+
+    <div class="comments">
+        <br><br>
+        <h2>Comments (<%= post.comments.length %>) : </h2>
+        <br><br>
+        <input type="text" name="comment" id="comment">
+        <br><br>
+        <% for(comment of post.comments) {%>
+            <br>
+            <h4>-> <%= comment %></h4>
+            <hr>
+        <% } %>
+    </div>
+
+
+    <a href="http://localhost:8080/posts">Go to Home</a>
+</body>
+</html>

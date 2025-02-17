@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+h1 {
+    padding: 10px 0 10px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.post {
+    margin: 10px 0 10px 0;
+    background-color: #3b3b3b;
+}
+
+img {
+    margin: 1rem;
+}
+
+.caption {
+    margin: 1rem;
+}
+
+
+
+.user {
+    margin: 5px 0 5px 0;
+    font-style: italic;
+}
